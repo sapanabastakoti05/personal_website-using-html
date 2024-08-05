@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapana Bastakoti's Poems</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        main {
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .about-me, .poems, .contact {
+            display: none;
+            margin-top: 20px;
+        }
+        .about-me img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin: 10px auto;
+            border: 4px solid #4CAF50;
+        }
+        .about-me p, .poems .poem, .contact p {
+            font-size: 1.2em;
+        }
+        .poems {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .poem {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .poem:hover {
+            transform: translateY(-5px);
+        }
+        .poem h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        .poem p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    document.querySelectorAll('main > section').forEach(section => {
+                        section.style.display = 'none';
+                    });
+                    const sectionId = this.getAttribute('data-section');
+                    document.getElementById(sectionId).style.display = 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Heartly Welcome to official site of Sapana Bastakoti</h1>
+		<h2>"The best way to get started is to quit talking and begin doing." – Walt Disney</h2>
+    </header>
+    <nav>
+        <a data-section="About-me">About Me</a>
+        <a data-section="Poems">My Poems</a>
+        <a data-section="Contact">Contact</a>
+    </nav>
+    <main>
+        <section id="About-me" class="About-me">
+            <h2>About Me</h2>
+            <p>Name: Er.Sapana Bastakoti</p>
+            <p>Profession: Computer Engineer</p>
+            <p>Date of Birth: 2057-12-05</p>
+			<p>Temporary Address:pokhara-05</p>
+			<p>Permanent address:Pokhara-24</p>
+        </section>
+        <section id="Poems" class="Poems">
+            <h2>Poems</h2>
+			<div class="poem">
+			<h3>#####1#####</h3>
+                <p>चाहानाको एउटै बाटो, तिमिसगै काट्छु वरु</p>
+				<p>आउन हामि सर्त राखौ, बर्षो लागे कुछु वरु</p>
+				<p>छोरि हु म कसैको, इज्जत मुख्य ध्यानमा राख्देउ </P>
+				<p>सबै भुलि अघि बढ्, बाकि मैले टार्छु वरु</p>
+            </div>
+            <div class="poem">
+                <h3>#####2#####</h3>
+                <p>आफु हेर्छु, आफैलाई कमजोर लाग्छ</p>
+				<p>बुबाआमाको ऋण तिर्न असम्भव लाग्छ।।</p>
+<p></p>
+<p>तिमी बिहेमा दाइजो नमाग्नु प्यारा</p>
+ <p>बुबालाई हजार बचाउन महिनौ लाग्छ।।</p>
+<p></P>
+<p>कताकता आमाले बोलाए झै लाग्छ</p>
+<p>फर्किएर बचपन हेर्छु नरमाइलो लाग्छ ।।</P>
+<p></P>
+<p>कमाउथे आफै, दिन्थे बरु आफ्नै </p>
+<p>हेर्छु माइती भन्न पनि अप्ठ्यारै हुन्छ।।</P>
+<p></p>
+<p>बाबालाई हजार बचाउन महिनौं लाग्छ।।</p>
+<p></p>
+<p>बर्षों कसरी टारे होलान अचम्म लाग्छ।।</p>
+            </div>
+            <!-- Add more poems as needed -->
+        </section>
+        <section id="Contact" class="Contact">
+            <h2>Contact</h2>
+			<div class="Contact">
+            <h3>Mail_ID</h3>
+			<p>Sapanabastakoti223@gmail.com </p>
+			
+    </main>
+    <footer>
+        <p>&copy; 2024 Sapana Bastakoti. All rights reserved.</p>
+    </footer>
+</body>
+</html>
